@@ -70,5 +70,14 @@
             </div>
         </form>
     </div>
+    <div class="container">
+        <h1>Predección</h1>
+        <h2>Resultado:</h2>
+        <p>Clase: {{ e.clase }}</p>
+        <p>Certeza: {{ e.certeza }}</p>
+        {% if imagen_codificada %}
+            <img src="data:image/jpeg;base64,{{ imagen_codificada }}" alt="Imagen">
+        {% endif %}
+    </div>
 </body>
 </html>
