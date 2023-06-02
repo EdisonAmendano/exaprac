@@ -32,4 +32,4 @@ class Clasificacion():
             resul = 'Error al procesar la imagen'
             imagen_codificada = ''
 
-        return render(request, "Informe.html", {"e": resul, "imagen_codificada": imagen_codificada})
+        return render(request, "VistaComentarios.html", {"e": resul, "imagen_codificada": imagen_codificada})
